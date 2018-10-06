@@ -3,8 +3,15 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+
+  <button (click)="handleClick()">Console Log me</button>
+  <p>{{video.title}}</p>
+  <input [(ngModel)] = "video.title" />
+  <p>{{video.views}}</p> 
+  <p>{{video.liked}}</p> 
+  
+  
   
 </div>
-<h2>Here are some links to help you start: </h2>
 
 
