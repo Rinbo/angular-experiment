@@ -14,7 +14,19 @@ export class AppComponent {
     liked: true
   }
 
+  videos = [
+    {name: 'video one', liked: true},
+    {name: 'video two', liked: false}
+ ]
+
+ isShown: boolean = true
+
   handleClick() {
     console.log("Someone clicked the 'like' button in the template :)")
   }
+
+  handleIsShown() {
+    this.isShown ? this.isShown = false : this.isShown = true
+  }
+
 }

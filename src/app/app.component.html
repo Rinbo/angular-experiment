@@ -8,7 +8,18 @@
   <p>{{video.title}}</p>
   <input [(ngModel)] = "video.title" />
   <p>{{video.views}}</p> 
-  <p>{{video.liked}}</p> 
+  <p>{{video.liked}}</p>
+
+  <div>
+    <ul>
+      <li *ngFor="let video of videos">
+        Name: {{video.name}}
+        Liked: {{video.liked}}
+      </li>
+    </ul>
+  </div>
+  <button (click)="handleIsShown()">Click me</button>
+  <p *ngIf="isShown">This should be hidden or shown</p>
   
   
   
